@@ -7,6 +7,7 @@
  * Return: Always 0
  */
 void print_diagonal(int n)
+7
 {
 	int i, j;
 
