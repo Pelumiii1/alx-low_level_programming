@@ -1,25 +1,23 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
  * cap_string -> capitalization function
- * @x: string param
+ * @s: string param
  * Retrun: capitalized version of the string
  */
-char *cap_string(char *x)
+char *cap_string(char *s)
 {
-char spc[] = {32, 9, '\n', ',', '.', '!', '?', '"', '(', ')', '{', '}'};
-int len = 13;
-int a = 0, i;
+int i, j;
+char delimeters[] = " \t\n,;.!?\"(){}";
 
-while (x[a])
+for (i = 0; s[i] != '\0'; i++)
 {
-i = 0;
-while (i < len)
-{
-if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
-x[a] = x[a] - 32;
-i++;
+if (s[0] >= 97 && s[0] <= 122)
+s[0] = s[0] - 32;
+for (j = 0; delimeters[j] != '\0'; j++)
+if (s[i] == delimeters[j] && s[i + 1] >= 97 && s[i + 1] <= 122)
+s[i + 1] = s[i + 1] - 32;
 }
-a++;
-}
-return (x);
+return (s);
 }
