@@ -7,8 +7,6 @@
  * @src: param2
  * @n: param3
  * Return: a string
- * 
- * 
  */
 char *_strncpy(char *dest, char *src, int n)
 {
