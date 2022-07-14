@@ -8,7 +8,7 @@
 char *cap_string(char *x)
 {
 char spc[] = {32, 9, '\n', ',', '.', '!', '?', '"', '(', ')', '{', '}'};
-it len = 13;
+int len = 13;
 int a = 0, i;
 
 while (x[a])
