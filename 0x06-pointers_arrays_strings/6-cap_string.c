@@ -3,7 +3,7 @@
  * cap_string -> capitalization function
  * @x: string param
  * Retrun: capitalized version of the string
- * 
+ *
  */
 char *cap_string(char *x)
 {
