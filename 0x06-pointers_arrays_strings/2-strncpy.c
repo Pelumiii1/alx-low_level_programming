@@ -1,13 +1,13 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * _strcpy -> for copying purpose
- * @dest: param1
- * @src: param2
- * @n: param3
- * Return: a string
+ * _strncpy - two words
+ * @dest : pointer to char params
+ * @src : pointer to char params
+ * @n : int params
+ * Return: *dest
  */
+
 char *_strncpy(char *dest, char *src, int n)
 {
 int i;
